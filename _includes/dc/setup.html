@@ -40,12 +40,90 @@ Genomics workshops
 {% endcomment %}
 
 {% elsif site.curriculum == "dc-genomics" %}
-<p>The setup instructions for the Data Carpentry Genomics workshops can be found at <a href="https://datacarpentry.org/genomics-workshop/setup.html">the workshop overview site</a></p>.
 
-Please note that we will be using Option A (with DRAC resources), so you do
-<em>not</em> need to install FastQC, Trimmomatic, BWA, SAMtools, or BCFtools. You do,
-however, need to install <a href=https://software.broadinstitute.org/software/igv/download>IGV</a>.
+<p>You will need some software installed on your Computer in order to participate
+in this workshop.</p>
 
+<ul>
+	<li>A modern browser like <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/chrome/">Chrome</a></li>
+	<li><a href="https://zoom.us/support/download">Zoom</a></li>
+	<li>A spreadsheet program. If you already have Excel installed, that's fine. 
+	If you are looking for a free, open-source option, try <a href="https://www.libreoffice.org/">LibreOffice</a></li>
+	<li>A Unix-based terminal (see below)</li>
+	<li>Watch <a href="https://www.youtube.com/watch?v=fCd6B5HRaZ8https://www.youtube.com/watch?v=fCd6B5HRaZ8">this 5-minute video</a> 
+	to learn the basics of Illumina DNA sequencing</li>
+</ul>
+
+Installing a Unix-like terminal:
+
+<ul>
+	<li>Mac OS or Linux
+	<ul>
+		<li>You already have this software installed. It is called Terminal. On 
+		Mac OS it is located in your Applications folder inside the Utilities 
+		folder</li>
+	</ul></li>
+	<li>Windows
+	<ul>
+		<li>If you have Windows 10 or later, you can install Ubuntu Subsystem 
+		for Windows. <a href="https://docs.microsoft.com/en-us/windows/wsl/install">Detailed instructions are available here.</a></li>
+		<li>Another option is to install <a href="https://gitforwindows.org/">git 
+		for Windows</a>, which comes bundled with a Unix-like shell. Download the Git for 
+		Windows installer. Run the installer and follow the steps below:
+		<ul>
+			<li>Click on "Next" four times (two times if you've previously
+			installed Git). You don't need to change anything in the
+			information, location, components, or start menu screens.</li>
+			<li><b>From the dropdown menu, select "use the Nano editor by
+			default" (NOTE: you will need to scroll up to find it) and click on
+			"Next".</b></li>
+			<li>On the page that says "Adjusting the name of the initial branch
+			in new repositories", ensure that "Let Git decide" is selected. This
+			will ensure the highest level of compatibility for our lessons.</li>
+			<li>Ensure that "Git from the command line and also from 3rd-party
+			software is selected and click on "Next". (If you don't do this, Git
+			Bash will not work properly, requiring you to remove the Git Bash
+			installation and re-run the installer with this option
+			selected.)</li>
+			<li>Ensure that "Use the native Windows Secure Channel Library" is
+			selected and click on "Next".</li>
+			<li>Ensure that “Checkout Windows-style, commit Unix-style line
+			endings” is selected and click on “Next”.</li>
+			<li>Ensure that “Use Windows’ default console window” is selected
+			and click on "Next".</li>
+			<li>Ensure that "Default (fast-forward or merge)" is selected and
+			click "Next"</li>
+			<li>Ensure that "Git Credential Manager Core" is selected and click
+			on "Next".</li>
+			<li>Ensure that "Enable file system caching" is selected and click
+			on "Next".</li>
+			<li>Click on "Install".</li>
+			<li>Click on "Finish".</li>
+			<li>Check the settings for you your "HOME" environment variable.
+			<ul>
+				<li>If your "HOME" environment variable is not set (or you don’t
+				know what this is):</li>
+				<li>Open command prompt (Open Start Menu then type cmd and press
+				[Enter])</li>
+				<li>Type the following line into the command prompt window 
+				exactly as shown: setx HOME "%USERPROFILE%"</li>
+				<li>Press [Enter], you should see SUCCESS: Specified value was
+				saved.</li>
+				<li>Quit command prompt by typing exit then pressing
+				[Enter]</li>
+			</ul></li>
+		</ul></li>
+		<li>An <b>alternative option></b> is to install PuTTY by going to
+		<a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">the
+		installation page</a>. For most newer computers, click on
+		putty-64bit-X.XX-installer.msi to download the 64-bit version. If you
+		have an older laptop, you may need to get the 32-bit version
+		putty-X.XX-installer.msi. If you aren’t sure whether you need the 64 or
+		32 bit version, you can check your laptop version by following the
+		instructions here. Once the installer is downloaded, double click on it,
+		and PuTTY should install.</li>
+	</ul></li>
+</ul>
 
 {% comment %}
 Social sciences workshops
